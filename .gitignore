@@ -1,0 +1,19 @@
+node_modules/
+dist/
+*.tsbuildinfo
+.env
+.env.local
+.env.*
+.npmrc
+*.log
+
+# Internal docs
+docs/
+
+# AI/editor tool configs — not for public repo
+.claude/
+.rosetta/
+.aider.conf.yml
+.cursorrules
+ROSETTA.md
+CLAUDE.md

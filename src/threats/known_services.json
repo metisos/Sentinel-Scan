@@ -1,0 +1,10 @@
+{
+  "description": "Known malicious systemd service names and patterns",
+  "entries": [
+    { "name": "bot.service", "description": "Kinsing cryptominer persistence", "severity": "critical" },
+    { "name": "systemd-utils.service", "description": "Disguised backdoor persistence", "severity": "critical" },
+    { "name": "alive.service", "description": "Malware watchdog/persistence", "severity": "critical" },
+    { "name": "lived.service", "description": "Malware watchdog/persistence", "severity": "critical" },
+    { "name": "nginxd.service", "description": "Fake nginx persistence", "severity": "high" }
+  ]
+}

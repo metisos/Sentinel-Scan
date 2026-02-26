@@ -1,0 +1,11 @@
+{
+  "description": "Known malicious file paths and directories",
+  "entries": [
+    { "path": "/etc/data/", "name": "Kinsing malware directory", "severity": "critical" },
+    { "path": "/root/.systemd-utils/", "name": "Disguised backdoor directory", "severity": "critical" },
+    { "path": "/tmp/xdlol", "name": "Mirai-variant binary", "severity": "critical" },
+    { "path": "/var/Sofia", "name": "Mirai botnet binary", "severity": "critical" },
+    { "path": "/tmp/runnv/", "name": "Malware persistence scripts", "severity": "high" },
+    { "path": "/var/tmp/.bin", "name": "Malware state tracking file", "severity": "high" }
+  ]
+}

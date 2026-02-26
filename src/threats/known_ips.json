@@ -1,0 +1,30 @@
+{
+  "description": "Known C2 servers, mining pools, and malware distribution IPs",
+  "entries": {
+    "94.156.152.67": {
+      "name": "Mirai C2 + malware distribution",
+      "type": "c2",
+      "severity": "critical"
+    },
+    "23.226.71.200": {
+      "name": "ntpclient C2 server",
+      "type": "c2",
+      "severity": "critical"
+    },
+    "pool.minexmr.com": {
+      "name": "Monero mining pool",
+      "type": "mining_pool",
+      "severity": "high"
+    },
+    "pool.supportxmr.com": {
+      "name": "Monero mining pool",
+      "type": "mining_pool",
+      "severity": "high"
+    },
+    "xmr.pool.minergate.com": {
+      "name": "Monero mining pool",
+      "type": "mining_pool",
+      "severity": "high"
+    }
+  }
+}

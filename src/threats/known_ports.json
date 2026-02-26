@@ -1,0 +1,14 @@
+{
+  "description": "Suspicious listening and outbound ports",
+  "entries": [
+    { "port": 3333, "name": "Common mining pool port", "severity": "high", "direction": "outbound" },
+    { "port": 4444, "name": "Common mining pool / Metasploit port", "severity": "high", "direction": "outbound" },
+    { "port": 5555, "name": "Mining pool port", "severity": "high", "direction": "outbound" },
+    { "port": 8333, "name": "Bitcoin network port", "severity": "high", "direction": "outbound" },
+    { "port": 14444, "name": "Mining pool port", "severity": "high", "direction": "outbound" },
+    { "port": 23, "name": "Telnet (botnet scanning)", "severity": "high", "direction": "outbound" },
+    { "port": 2323, "name": "Telnet alt (botnet scanning)", "severity": "high", "direction": "outbound" },
+    { "port": 37215, "name": "Huawei router exploitation", "severity": "critical", "direction": "outbound" },
+    { "port": 8657, "name": "Known C2 port (Mirai)", "severity": "critical", "direction": "outbound" }
+  ]
+}

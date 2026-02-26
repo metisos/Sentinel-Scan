@@ -1,0 +1,55 @@
+{
+  "name": "sentinel-scan",
+  "version": "0.1.0",
+  "description": "Server security scanner — detect malware, backdoors, rootkits, and misconfigurations on Linux servers",
+  "type": "module",
+  "main": "./dist/index.js",
+  "types": "./dist/index.d.ts",
+  "bin": {
+    "sentinel": "./dist/cli/index.js"
+  },
+  "exports": {
+    ".": {
+      "types": "./dist/index.d.ts",
+      "import": "./dist/index.js"
+    }
+  },
+  "files": [
+    "dist",
+    "README.md",
+    "LICENSE"
+  ],
+  "scripts": {
+    "build": "tsc && cp src/threats/*.json dist/threats/",
+    "dev": "tsx src/cli/index.ts",
+    "start": "node dist/cli/index.js",
+    "clean": "rm -rf dist",
+    "prepublishOnly": "npm run build"
+  },
+  "keywords": [
+    "security",
+    "scanner",
+    "linux",
+    "server",
+    "malware",
+    "rootkit",
+    "intrusion-detection",
+    "devops",
+    "sysadmin"
+  ],
+  "author": "",
+  "license": "MIT",
+  "engines": {
+    "node": ">=18"
+  },
+  "dependencies": {
+    "chalk": "^5.3.0",
+    "commander": "^12.1.0",
+    "ora": "^8.1.0"
+  },
+  "devDependencies": {
+    "@types/node": "^22.0.0",
+    "tsx": "^4.19.0",
+    "typescript": "^5.6.0"
+  }
+}

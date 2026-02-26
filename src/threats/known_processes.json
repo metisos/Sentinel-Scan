@@ -1,0 +1,14 @@
+{
+  "description": "Known malware process names and patterns",
+  "entries": [
+    { "pattern": "kinsing", "name": "Kinsing cryptominer", "severity": "critical", "family": "cryptominer" },
+    { "pattern": "xmrig", "name": "XMRig cryptominer", "severity": "critical", "family": "cryptominer" },
+    { "pattern": "xdlol", "name": "Mirai-variant downloader", "severity": "critical", "family": "mirai" },
+    { "pattern": "Sofia", "name": "Mirai-variant botnet scanner", "severity": "critical", "family": "mirai" },
+    { "pattern": "ntpclient", "name": "Disguised backdoor (fake NTP)", "severity": "critical", "family": "backdoor" },
+    { "pattern": "coinminer", "name": "Generic cryptominer", "severity": "critical", "family": "cryptominer" },
+    { "pattern": "dota\\.", "name": "Dota IRC botnet", "severity": "critical", "family": "botnet", "regex": true },
+    { "pattern": "bioset", "name": "Linux malware (fake bioset)", "severity": "high", "family": "malware" },
+    { "pattern": "nginxd", "name": "Fake nginx daemon", "severity": "high", "family": "backdoor" }
+  ]
+}
