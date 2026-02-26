@@ -156,6 +156,28 @@ Sentinel ships with a threat database seeded from **real-world incidents**:
 
 **Markdown** (`--format markdown`) — full report with tables, suitable for documentation, sharing, or attaching to incident tickets.
 
+## AI Agent Skill
+
+Sentinel ships with a ready-made skill for AI coding agents (Claude Code, etc.). To add it to your project:
+
+```bash
+# Copy the skill into your project
+cp -r node_modules/sentinel-scan/skills/security-scan .claude/skills/
+
+# Or clone from the repo
+cp -r skills/security-scan /path/to/your/project/.claude/skills/
+```
+
+Once installed, the agent can run `/security-scan` to scan the server, or use the programmatic API directly:
+
+```
+/security-scan                          # Full scan
+/security-scan processes,network        # Specific modules
+/security-scan credentials              # Check for exposed secrets
+```
+
+The skill instructs the agent to present findings clearly, prioritize critical issues, and never auto-remediate — it reports and recommends, then lets you decide.
+
 ## Requirements
 
 - **Node.js 18+**
